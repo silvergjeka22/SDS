@@ -659,6 +659,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralControl1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralControl1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralContol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralControl2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralControl2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralContol"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ComplianceRiskHeight1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ComplianceRiskHeight1">
@@ -694,6 +710,78 @@
     
 
 
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanAsset1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanAsset1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanAssets"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanAsset2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanAsset2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanAssets"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanRisk1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanRisk1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanRisk"/>
+        <SDS:affectAssets rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanAsset1"/>
+        <SDS:hasImpact rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#SocialImpact1"/>
+        <SDS:hasThreat rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenThreat1"/>
+        <SDS:hasVulnerability rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenVulnerability1"/>
+        <SDS:isControledBy rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralControl1"/>
+        <SDS:hasCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4000</SDS:hasCost>
+        <SDS:hasDescription>Risk associated with himan errors.</SDS:hasDescription>
+        <SDS:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.254</SDS:hasProbability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanRisk2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanRisk2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanRisk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenThreat1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenThreat1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanThreat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenThreat2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenThreat2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanThreat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenVulnerability1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenVulnerability1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanVulnerability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenVulnerability2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenVulnerability2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanVulnerability"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Low -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Low"/>
@@ -703,6 +791,70 @@
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Medium -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Medium"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OrganizationalVulnerabilty1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OrganizationalVulnerabilty1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OrganizationalVulnerability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OrganizationalVulnerabilty2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OrganizationalVulnerabilty2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OrganizationalVulnerability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PolicyControl1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PolicyControl1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PolicyControl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PolicyControl2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PolicyControl2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PolicyControl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationAsset1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationAsset1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationalAssets"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationAsset2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationAsset2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationalAssets"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#RiskRegister1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#RiskRegister1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#RiskRegister"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#RiskRegister2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#RiskRegister2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#RiskRegister"/>
+    </owl:NamedIndividual>
     
 
 
