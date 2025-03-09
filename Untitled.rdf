@@ -89,6 +89,35 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasCost"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasProbability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasProbability"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
