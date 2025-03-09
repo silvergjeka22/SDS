@@ -42,14 +42,19 @@
     
 
 
-    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasLevel -->
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasRiskLevel -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasLevel">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Impact"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasRiskLevel">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Level"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasTheratLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasTheratLevel">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Level"/>
     </owl:ObjectProperty>
     
@@ -69,6 +74,15 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasVulnerability">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasVulnerabilityLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasVulnerabilityLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Level"/>
     </owl:ObjectProperty>
     
 
@@ -679,7 +693,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ComplianceRiskHeight1">
         <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ComplianceRisk"/>
-        <SDS:hasLevel rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Height"/>
     </owl:NamedIndividual>
     
 
@@ -688,7 +701,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ComplianceRiskLow1">
         <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ComplianceRisk"/>
-        <SDS:hasLevel rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Low"/>
     </owl:NamedIndividual>
     
 
@@ -697,7 +709,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ComplianceRiskMedium1">
         <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ComplianceRisk"/>
-        <SDS:hasLevel rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Medium"/>
     </owl:NamedIndividual>
     
 
@@ -732,6 +743,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanRisk"/>
         <SDS:affectAssets rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanAsset1"/>
         <SDS:hasImpact rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#SocialImpact1"/>
+        <SDS:hasRiskLevel rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Medium"/>
+        <SDS:hasTheratLevel rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Low"/>
         <SDS:hasThreat rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenThreat1"/>
         <SDS:hasVulnerability rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenVulnerability1"/>
         <SDS:isControledBy rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralControl1"/>
@@ -746,6 +759,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanRisk2">
         <rdf:type rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanRisk"/>
+        <SDS:affectAssets rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanAsset2"/>
+        <SDS:hasImpact rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#SocialImpact2"/>
+        <SDS:hasRiskLevel rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Height"/>
+        <SDS:hasTheratLevel rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Low"/>
+        <SDS:hasThreat rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenThreat2"/>
+        <SDS:hasVulnerability rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumenVulnerability2"/>
+        <SDS:hasVulnerabilityLevel rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Height"/>
+        <SDS:isControledBy rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralControl2"/>
+        <SDS:hasCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5038</SDS:hasCost>
+        <SDS:hasDescription>Risk with human errors with different levels</SDS:hasDescription>
+        <SDS:hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.66698</SDS:hasProbability>
     </owl:NamedIndividual>
     
 
