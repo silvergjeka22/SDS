@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS">
-        <rdfs:comment>Security Disclaiming Concepts</rdfs:comment>
+        <rdfs:comment>The Security Disclaimer Ontology (SDS) models security disclaiming concepts, including risks, legal considerations. It provides a structured framework for assessing security disclaimers, linking risks to threats and vulnerabilities, and supporting compliance and risk management.</rdfs:comment>
     </owl:Ontology>
     
 
