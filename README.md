@@ -69,5 +69,8 @@ The ontology also defines object properties to describe how the different concep
 
 ## Graph
 
+![](./img/Sds.png)
+
 Check out the link to see the visual representation:
 [Security Disclaimer Ontology (SDS) Graph](https://service.tib.eu/webvowl/#opts=doc=0;#file=SDS.rdf)
+
