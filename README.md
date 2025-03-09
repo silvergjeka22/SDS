@@ -1,73 +1,73 @@
 # Security Disclaimer Ontology (SDS)
 
 ## Overview
-The **Security Disclaimer Ontology (SDS)** provides a formalized framework for representing the various elements involved in disclaiming security responsibilities. It defines a structured vocabulary that can be used to describe key security concepts such as risks, liabilities, legal considerations, and mitigations. By modeling these concepts, the ontology helps organizations communicate security disclaimers more effectively, ensuring stakeholders are aware of the limitations and responsibilities associated with security aspects of a system.
+The **Security Disclaimer Ontology (SDS)** is a way to clearly represent and explain important aspects of security disclaimers. It uses a structured vocabulary to describe concepts like risks, responsibilities, legal issues, and solutions. This ontology helps organizations communicate their security disclaimers more clearly so that everyone understands the limitations and responsibilities regarding security.
 
-The SDS ontology is applicable in contexts such as legal documentation, compliance audits, cybersecurity risk assessments, and privacy assessments. It allows for a comprehensive understanding of security liabilities and provides a foundation for analyzing and mitigating risks.
+SDS can be used in many areas like legal documents, compliance checks, cybersecurity assessments, and privacy audits. It helps organizations understand security risks and find ways to reduce them.
 
 ## Purpose
-The primary goals of the Security Disclaimer Ontology are:
-- **Facilitating Communication**: Help organizations articulate security disclaimers clearly, outlining the scope of responsibilities and limitations concerning security.
-- **Risk Management**: Assist in identifying, assessing, and mitigating security risks by providing a structured way to link risks to their sources, threats, vulnerabilities, and impacts.
-- **Ensuring Compliance**: Help organizations ensure that their disclaimers align with industry standards and legal requirements, minimizing compliance risks.
-- **Incident Management**: Support the tracking and understanding of security incidents and their impacts, improving response and mitigation strategies.
+The main goals of the Security Disclaimer Ontology are:
+- **Clear Communication**: Help organizations explain their security disclaimers in simple terms, so everyone knows what they are responsible for and what they aren't.
+- **Risk Management**: Help organizations identify, understand, and reduce security risks by linking risks to their causes, threats, weaknesses, and effects.
+- **Compliance**: Help ensure that the disclaimers follow legal and industry rules, reducing the risk of breaking any laws.
+- **Incident Management**: Help organizations track and manage security problems, making it easier to fix them and prevent future issues.
 
 ## Core Concepts and Classes
-The ontology consists of several core classes, each representing a distinct aspect of security disclaimers. These classes are further divided into subclasses to capture specific details. Below is a description of the main classes and their subclasses.
+The ontology includes several main categories (classes), each representing a different part of security disclaimers. Each class is divided into subcategories to give more specific details. Here’s an overview of the main classes:
 
 ### 1. Disclaimer
-The **Disclaimer** class serves as the root for modeling various types of disclaimers that an organization might issue regarding security responsibilities. It includes the following subclasses:
-- **LegalDisclaimer**: This subclass represents disclaimers related to legal responsibilities, limitations, or liabilities in the context of security. It may involve clauses that waive liability for damages arising from security issues.
-- **TechnicalDisclaimer**: This subclass covers disclaimers regarding technical limitations, such as system vulnerabilities, the scope of security protections, or performance guarantees.
-- **PrivacyDisclaimer**: This subclass pertains to disclaimers related to data privacy, such as how personal information is handled, stored, and protected under security measures.
+The **Disclaimer** class represents different types of disclaimers that organizations can use about security. The subclasses include:
+- **LegalDisclaimer**: Covers disclaimers related to legal matters, such as statements that limit the organization’s legal responsibility for security problems.
+- **TechnicalDisclaimer**: Deals with disclaimers about technical limitations, like security flaws or the scope of protection.
+- **PrivacyDisclaimer**: Includes disclaimers about how personal information is stored and protected.
 
 ### 2. Risk
-The **Risk** class represents potential security threats or vulnerabilities that could impact an organization's security posture. It includes the following subclasses:
-- **SecurityRisk**: This subclass identifies risks related to security breaches, including unauthorized access, data leaks, or cyber-attacks such as hacking or malware.
-- **OperationalRisk**: This subclass relates to risks originating from internal processes or system failures, such as human error or inadequate security practices within an organization.
-- **ComplianceRisk**: This subclass addresses risks related to failure in meeting legal or regulatory security requirements, such as data protection laws or industry-specific compliance standards.
-- **ReputationalRisk**: This subclass concerns the risk to an organization's reputation due to security failures, such as data breaches that damage trust with customers or stakeholders.
+The **Risk** class represents possible security threats or weaknesses. The subclasses include:
+- **SecurityRisk**: Covers risks related to security issues like hacking, data leaks, or cyberattacks.
+- **OperationalRisk**: Refers to risks caused by internal processes or mistakes, such as human error.
+- **ComplianceRisk**: Deals with risks related to not meeting legal or regulatory security standards.
+- **ReputationalRisk**: Concerns the risk to an organization’s reputation if a security issue occurs.
 
 ### 3. Threat
-The **Threat** class describes potential malicious actions or events that could lead to a security breach or risk. The following subclasses capture specific types of threats:
-- **CyberThreat**: This subclass includes digital threats like hacking attempts, phishing attacks, malware, or distributed denial of service (DDoS) attacks.
-- **HumanThreat**: This subclass deals with threats posed by human actions, either intentional (e.g., insider threats) or unintentional (e.g., employee errors or lapses in security awareness).
-- **PhysicalThreat**: This subclass covers physical threats to assets, such as theft, vandalism, or unauthorized access to premises or physical security systems.
+The **Threat** class describes possible harmful actions or events that could lead to a security issue. The subclasses include:
+- **CyberThreat**: Covers digital threats like hacking, malware, or phishing attacks.
+- **HumanThreat**: Includes threats caused by people, whether intentional (like an insider attack) or unintentional (like a mistake).
+- **PhysicalThreat**: Deals with physical threats, like theft or damage to equipment.
 
 ### 4. Vulnerability
-The **Vulnerability** class identifies weaknesses that can be exploited by threats to cause security risks. It includes the following subclasses:
-- **ApplicationVulnerability**: This subclass refers to software-related vulnerabilities, such as bugs, unpatched systems, or flaws in coding practices that could be exploited by attackers.
-- **NetworkVulnerability**: This subclass focuses on weaknesses in network infrastructure, such as misconfigurations, unsecured communication channels, or exposed network services.
-- **ComplianceVulnerability**: This subclass addresses weaknesses in an organization's compliance with security regulations, such as insufficient security measures to meet industry standards or legal requirements.
+The **Vulnerability** class represents weaknesses that could be used by threats to cause damage. The subclasses include:
+- **ApplicationVulnerability**: Software weaknesses, such as bugs or unpatched systems.
+- **NetworkVulnerability**: Weaknesses in the network, like unsecured connections or exposed services.
+- **ComplianceVulnerability**: Weaknesses in following security rules or standards.
 
 ### 5. Impact
-The **Impact** class defines the consequences or outcomes of security risks being realized. It includes the following subclasses:
-- **FinancialImpact**: This subclass captures the monetary costs resulting from a security incident, such as legal fees, fines, remediation costs, or business disruption.
-- **ReputationalImpact**: This subclass deals with the damage to an organization's public image or credibility, which may occur due to security breaches or failures.
-- **LegalImpact**: This subclass focuses on the legal consequences that may arise from security incidents, such as lawsuits, regulatory penalties, or legal action due to non-compliance.
+The **Impact** class describes the effects of a security issue happening. The subclasses include:
+- **FinancialImpact**: The cost of a security incident, such as legal fees or business losses.
+- **ReputationalImpact**: The harm to an organization’s reputation caused by a security failure.
+- **LegalImpact**: The legal consequences of a security incident, such as lawsuits or fines.
 
 ### 6. Control
-The **Control** class represents various measures that can be put in place to manage and mitigate security risks. These controls are divided into:
-- **PreventiveControl**: This subclass includes measures designed to prevent security risks from occurring, such as firewalls, intrusion detection systems, or secure coding practices.
-- **DetectiveControl**: This subclass involves measures that detect and alert organizations to potential security incidents, such as monitoring systems, anomaly detection, or security audits.
-- **CorrectiveControl**: This subclass focuses on actions taken to mitigate or correct security failures after they have been identified, such as patching vulnerabilities, incident response, or system restoration.
+The **Control** class represents measures taken to reduce or manage security risks. The subclasses include:
+- **PreventiveControl**: Measures taken to stop security issues before they happen, like firewalls or secure coding practices.
+- **DetectiveControl**: Measures to detect security issues, like monitoring systems or audits.
+- **CorrectiveControl**: Measures taken after a problem is identified, such as patching vulnerabilities or responding to incidents.
 
 ### 7. Incident
-The **Incident** class categorizes events that represent security breaches or failures. It includes the following subclasses:
-- **DataBreachIncident**: This subclass describes incidents where sensitive data is accessed or exposed without authorization.
-- **SystemFailureIncident**: This subclass refers to incidents where critical systems or services fail, potentially compromising security or operational performance.
-- **ComplianceIncident**: This subclass deals with incidents that result in violations of security regulations or laws, such as failure to meet compliance standards or data protection requirements.
+The **Incident** class represents security breaches or failures. The subclasses include:
+- **DataBreachIncident**: Incidents where sensitive data is accessed or exposed without permission.
+- **SystemFailureIncident**: Incidents where systems fail, compromising security.
+- **ComplianceIncident**: Incidents that violate security laws or regulations.
 
 ## Object Properties
-The ontology also defines several object properties to model the relationships between different classes. These relationships describe how different concepts in the ontology interact with each other.
-
-- `hasThreat`: Links a **Risk** to the **Threat** that could cause it. This relationship helps connect risks to their sources.
-- `hasVulnerability`: Associates a **Risk** with the **Vulnerability** that could be exploited to realize the risk.
-- `affectsAsset`: Identifies the **Asset** (e.g., data, systems, infrastructure) that is impacted by a particular **Risk**.
-- `hasImpact`: Specifies the consequences or outcomes (**Impact**) that result from a **Risk** being realized.
-- `isMitigatedBy`: Links a **Risk** to the **Control** mechanisms (preventive, detective, or corrective) that mitigate or reduce the risk.
-- `resultsInIncident`: Describes the **Incident** that is caused by a **Risk** being realized.
+The ontology also defines object properties to describe how the different concepts are connected. These include:
+- `hasThreat`: Links a **Risk** to the **Threat** that caused it.
+- `hasVulnerability`: Connects a **Risk** to the **Vulnerability** that could be exploited.
+- `affectsAsset`: Shows which **Asset** (like data or systems) is impacted by a **Risk**.
+- `hasImpact`: Describes the effects (**Impact**) of a **Risk** happening.
+- `isMitigatedBy`: Links a **Risk** to the **Control** measures (like prevention or detection) that reduce it.
+- `resultsInIncident`: Describes the **Incident** that happens because of a **Risk**.
 
 ## Graph
 
-![](./img/SDS.svg)
+Check out the link to see the visual representation:
+[Security Disclaimer Ontology (SDS) Graph](https://service.tib.eu/webvowl/#opts=doc=0;#file=SDS.rdf)
