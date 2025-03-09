@@ -178,19 +178,17 @@
 
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
-    
-
-
-    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#AssetsContainer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#AssetsContainer"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets">
+        <rdfs:comment>Possible Assets</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralContol -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralContol"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralContol">
+        <rdfs:comment>Regulation of actions and decisions.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -220,13 +218,9 @@
 
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control"/>
-    
-
-
-    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ControlContainer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ControlContainer"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control">
+        <rdfs:comment>Types of Controls</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -258,6 +252,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Database">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+        <rdfs:comment>Database Data</rdfs:comment>
     </owl:Class>
     
 
@@ -298,6 +293,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Financial">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+        <rdfs:comment>Finantial Data</rdfs:comment>
     </owl:Class>
     
 
@@ -344,7 +340,9 @@
 
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanContainer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanContainer"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanContainer">
+        <rdfs:comment>contains al the possible cases for a humen to have lie threat risk etc</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -360,6 +358,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanResources">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+        <rdfs:comment>Human Resorses</rdfs:comment>
     </owl:Class>
     
 
@@ -410,6 +409,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#IntellectualProperty">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+        <rdfs:comment>Property</rdfs:comment>
     </owl:Class>
     
 
@@ -434,6 +434,7 @@
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:comment>shows the level for different types</rdfs:comment>
     </owl:Class>
     
 
@@ -488,9 +489,7 @@
 
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OrganizationalVulnerability -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OrganizationalVulnerability">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#VulnerabilityContainer"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OrganizationalVulnerability"/>
     
 
 
@@ -498,6 +497,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Personnel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+        <rdfs:comment>The Presoneal</rdfs:comment>
     </owl:Class>
     
 
@@ -520,9 +520,7 @@
 
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PolicyControl -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PolicyControl">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ControlContainer"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PolicyControl"/>
     
 
 
@@ -552,7 +550,9 @@
 
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Register -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Register"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Register">
+        <rdfs:comment>Registering all the risks,therats, etc</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -567,7 +567,7 @@
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationalAssets -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationalAssets">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#AssetsContainer"/>
+        <rdfs:comment>Valuable trust-based business reputation.</rdfs:comment>
     </owl:Class>
     
 
@@ -582,7 +582,9 @@
 
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk">
+        <rdfs:comment>some types of risks</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -638,6 +640,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Technology">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+        <rdfs:comment>Technology that uses</rdfs:comment>
     </owl:Class>
     
 
@@ -652,19 +655,17 @@
 
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat">
+        <rdfs:comment>some types of threat</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability"/>
-    
-
-
-    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#VulnerabilityContainer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#VulnerabilityContainer"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability">
+        <rdfs:comment>some types of vurnelability</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1057,16 +1058,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Hardware"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Network"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Software"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#AssetsContainer"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ControlContainer"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanContainer"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ImpactContainer"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#VulnerabilityContainer"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
