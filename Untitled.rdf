@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS/"
+     xml:base="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS">
+        <rdfs:comment>Security Disclaiming Concepts</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#affectAssets -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#affectAssets">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasImpact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasImpact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Impact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasThreat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasThreat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasVulnerability -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#hasVulnerability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#isControledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#isControledBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#recorededIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#recorededIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#RiskRegister"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#resultsInIncident -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#resultsInIncident">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Administrative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Administrative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Application -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Application">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralContol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#BehavioralContol"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ComplianceImpact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ComplianceImpact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Impact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ComplianceRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ComplianceRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Configuration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Configuration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Corrective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Corrective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#CyberSecurityRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#CyberSecurityRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#DataBreach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#DataBreach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Detective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Detective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#EconomcThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#EconomcThreat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#EnviorementThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#EnviorementThreat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#EquipmentFailure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#EquipmentFailure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Financial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Financial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#FinancialImpact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#FinancialImpact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Impact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Firmware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Firmware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Hardware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HealthThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HealthThreat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanAssets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanAssets"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanResources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanResources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanRisk"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanThreat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanVulnerability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#HumanVulnerability"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Impact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Impact"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Incident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Incident"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#IntellectualProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#IntellectualProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#LegalImpact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#LegalImpact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Impact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Logical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Logical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#MarketImpact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#MarketImpact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Impact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#NaturalDisaster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#NaturalDisaster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OperationalRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OperationalRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OpertationalImpact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OpertationalImpact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Impact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OrganizationalVulnerability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#OrganizationalVulnerability"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Personnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Personnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Physical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Physical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PhysicalThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PhysicalThreat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PolicyControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PolicyControl"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PoliticalThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#PoliticalThreat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Preventive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Preventive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ProjectRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ProjectRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationImpact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationImpact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Impact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationalAssets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationalAssets"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationalRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#ReputationalRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#RiskRegister -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#RiskRegister"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#SocialImpact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#SocialImpact"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#SocialThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#SocialThreat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#StrategicImapct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#StrategicImapct"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#StrategicRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#StrategicRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Risk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#SystemFailure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#SystemFailure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Technology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Technology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Assets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#TerrorristAttack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#TerrorristAttack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Incident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Threat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/silvergjeka/ontologies/2025/2/SDS#Vulnerability"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
