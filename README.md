@@ -58,8 +58,17 @@ The ontology also defines object properties to describe how the different concep
 - `hasVulnerability`: Connects a **Risk** to the **Vulnerability** that could be exploited.
 - `affectsAsset`: Shows which **Asset** (like data or systems) is impacted by a **Risk**.
 - `hasImpact`: Describes the effects (**Impact**) of a **Risk** happening.
-- `isMitigatedBy`: Links a **Risk** to the **Control** measures (like prevention or detection) that reduce it.
+- `isControledBy`: Links a **Risk** to the **Control** measures (like prevention or detection) that reduce it.
 - `resultsInIncident`: Describes the **Incident** that happens because of a **Risk**.
+- `recordedIn`: Links an **Incident** to the **Document** or **Log** where it is recorded.
+- `hasRiskLevel`: Describes the severity or level of a **Risk**.
+
+## Data Properties
+The ontology also includes data properties to provide additional details about the concepts. These include:
+- `hasCost`: Represents the cost associated with a **Risk** or **Impact**.
+- `hasDescription`: Provides a textual description of a concept.
+- `hasProbability`: Indicates the likelihood of a **Risk** occurring.
+- `hasRegisterNr`: Represents a registration number for tracking purposes.
 
 ## Graph
 
